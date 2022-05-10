@@ -241,8 +241,34 @@ body{
 	margin-bottom: 10px;
 }
 
+.comment-respond {
 
+	color: #fff;
+}
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url{
+	display: flex;
+	flex-direction: column;
+}
 
+.comment-form-comment textarea{
+	resize: none;
+	margin-bottom: 8px;
+	width: 450px;
+	outline: none;
+	border-radius: 0.5em;
+}
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input{
+	width: 200px;
+	padding: 5px;
+	margin-bottom: 8px;
+	border-radius: 0.5em;
+	outline: none;
+}
  /**
   * estilos do rodapé
   * **/
