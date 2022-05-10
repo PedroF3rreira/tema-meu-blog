@@ -38,12 +38,12 @@ function themesimple_theme_styles()
  	register_nav_menu( 'primary', __( 'Menu Primario', 'themesimple' ) );
 
  	//tamanho do logo costumizado
- 	$logo_width = 120;
- 	$logo_height = 80;
+ 	$logo_width = 200;
+ 	$logo_height = 100;
 
  	//suporte a logo costumizado
  	add_theme_support( 
- 		'custom_logo',
+ 		'custom-logo',
  		array( 
  			'height' 	  => $logo_height,
  			'width' 	  => $logo_width,
@@ -67,7 +67,7 @@ function themesimple_theme_styles()
          'id'            => 'themesimple-sidebar-right',
          'description'   => 'Um tema simples para busca filtros e categorias',
          'class'         => 'sidebar-right',
-         'before_widget' => '<div id="%1" class="widget %2">',
+         'before_widget' => '<div id="%1$s" class="widget %2$s">',
          'after_widget'  => '</div>',
          'before_title'  => '<h4 class="widget-title">',
          'after_title'   => '</h4>',

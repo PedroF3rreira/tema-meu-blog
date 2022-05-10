@@ -11,7 +11,11 @@
 			<div class="top-header">....</div>
 			
 			<div class="center-header container">
-				<div class="logo-site">My Blog</div>
+				<div class="logo-site">
+					<?php if( has_custom_logo() ): ?>
+						<?php the_custom_logo(); ?>
+					<?php endif; ?>
+				</div>
 				<?php if( has_nav_menu( 'primary' ) ): ?>
 					<?php wp_nav_menu( array(
 						'menu' 				=> 'primary',
@@ -22,6 +26,4 @@
 					) ); ?>
 				<?php endif; ?>
 			</div>
-			
-			<div class="bottom-header"></div>
 		</header>

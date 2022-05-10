@@ -3,10 +3,16 @@ if( post_password_required() ){
 	return;
 }
 
+?>
+
+<div class="comments">
+
+<?php
+
 if( have_comments() ){
 	foreach ( $comments as $comment ) {
 		?>
-		<div class="comments">
+		
 			<div class="comment">
 				<div class="comment-thumbnail">
 					<?php echo get_avatar( $comment, $size = 50 ); ?>
@@ -15,9 +21,13 @@ if( have_comments() ){
 					<?php comment_text(); ?>
 				</div>
 			</div>
-		</div>
+
 		<?php
 	}
 }
+?>		
 
+</div>
+
+<?php
 comment_form();
